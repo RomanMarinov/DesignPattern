@@ -1,12 +1,7 @@
 import mircoUsb.MicroUsb
 import nanoUsb.NanoUsbConnector
 
-class NanoUsbAdapter(_microUsb: MicroUsb) : NanoUsbConnector {
-
-    private val microUsb: MicroUsb
-    init {
-        microUsb = _microUsb
-    }
+class NanoUsbAdapter(private val microUsb: MicroUsb) : NanoUsbConnector {
 
     override fun nanoUsbConnect() {
         microUsb.microUsbConnect()
