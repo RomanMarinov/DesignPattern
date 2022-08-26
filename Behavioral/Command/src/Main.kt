@@ -7,8 +7,8 @@ fun main(){
     val thinks: Command = ThinksCommand(programmerReceiver = ProgrammerReceiver())
     val writeCode: Command = WriteCodeCommand(programmerReceiver = ProgrammerReceiver())
 
-    val programmerInvoker = ProgrammerInvoker(startThinkCommand = thinks, startWriteCodeCommand = writeCode)
+    val invoker = ProgrammerInvoker(startThinkCommand = thinks, startWriteCodeCommand = writeCode)
 
-    programmerInvoker.startThink()
-    programmerInvoker.startWriteCode()
+    invoker.startThink()
+    invoker.startWriteCode()
 }
