@@ -8,5 +8,4 @@ class SomeAction {
         }
         return count
     }
-
 }
