@@ -1,9 +1,9 @@
 package command
 
-import Programmer
+import ProgrammerReceiver
 
-class WriteCodeCommand (private val programmer: Programmer) : Command {
+class WriteCodeCommand (private val programmerReceiver: ProgrammerReceiver) : Command {
     override fun execute() {
-        programmer.writesCode()
+        programmerReceiver.writesCode()
     }
 }

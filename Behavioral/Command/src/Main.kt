@@ -4,11 +4,11 @@ import command.WriteCodeCommand
 
 fun main(){
 
-    val thinks: Command = ThinksCommand(programmer = Programmer())
-    val writeCode: Command = WriteCodeCommand(programmer = Programmer())
+    val thinks: Command = ThinksCommand(programmerReceiver = ProgrammerReceiver())
+    val writeCode: Command = WriteCodeCommand(programmerReceiver = ProgrammerReceiver())
 
-    val invoker = Invoker(thinkLongCommand = thinks, writeCodeFastCommand = writeCode)
+    val programmerInvoker = ProgrammerInvoker(startThinkCommand = thinks, startWriteCodeCommand = writeCode)
 
-    invoker.thinkLong()
-    invoker.writeCodeFast()
+    programmerInvoker.startThink()
+    programmerInvoker.startWriteCode()
 }
