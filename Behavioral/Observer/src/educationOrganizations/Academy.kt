@@ -1,3 +1,7 @@
+package educationOrganizations
+
+import news.Observer
+
 class Academy() : Observable {
     private val studentsAcademy: MutableList<Observer> = mutableListOf()
     private var newsAcademy: String = ""

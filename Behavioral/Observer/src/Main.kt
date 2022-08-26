@@ -1,3 +1,8 @@
+import educationOrganizations.Academy
+import educationOrganizations.University
+import news.StudentAcademy
+import news.StudentUniversity
+
 fun main(){
     val university = University()
     StudentUniversity("Roman", university)
