@@ -7,5 +7,4 @@ fun main(){
     johny.eating(HamburgerStrategy())
     johny.eating(HamburgerStrategy())
     johny.eating(CocaCola())
-
 }
