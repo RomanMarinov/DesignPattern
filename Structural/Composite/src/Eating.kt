@@ -1,0 +1,3 @@
+interface Eating {
+    fun eat()
+}
